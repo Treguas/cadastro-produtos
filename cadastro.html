@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/2666/2666505.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/form.css">
+
+  <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="top-bar-container">
+        <a href="index.html"> <img src="./assets/img/back.svg" alt="Voltar">
+        </a>
+        <img src="./assets/img/logo.svg" alt="Logo">
+    </div>
+
+    <div class="header-content">
+        <strong>Cadastro de Produtos</strong>
+        <p>Preencha os dados dos respectivos produtos</p>
+
+    </div>
+</header>
+
+      <div id="container-product">
+        <main>
+            <form id="create-table">
+                <fieldset>
+                    <legend>Dados do Produto</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome do produto</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                  <div class="input-block">
+                    <label for="nserie">Número de Série Ex. 00.000</label>
+                    <input type="text" id="nserie" maxlength="7" required>
+                </div>
+
+                <div class="textarea-block">
+                    <label for="caracteristica">Característica do Produto</label>
+                    <textarea id="carac" required></textarea>
+                </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo do Produto</legend>
+                    <div class="select-block">
+                        <label for="subject">Produto</label>
+                        <select id="tipo" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="eletrônicos">Eletrônicos</option>
+                            <option value="acessorios">Acessórios</option>
+                            <option value="outros">Outros</option>
+
+                        </select>
+                    </div>
+
+                </fieldset>
+            </form>
+            
+            <footer>
+                <p>
+                    <img src="./assets/img/warning.svg" alt="Aviso importante">
+                    Importante! <br> Preencha todos os dados
+                </p>
+                <button type="submit" id="cadastrar">Salvar cadastro</button>
+            </footer>
+        </main>
+    </div>
+
+
+    </div>
+  </main>
+</div>
+
+  <script src="./assets/js/cadastro.js"></script>
+</body>
+
+</html>

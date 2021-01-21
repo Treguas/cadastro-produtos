@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Consulta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/static/icons/svg/2666/2666505.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/consulta.css">
+
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="top-bar-container">
+            <a href="index.html"> <img src="./assets/img/back.svg" alt="Voltar">
+            </a>
+            <img src="./assets/img/logo.svg" alt="Logo">
+        </div>
+
+        <div class="header-content">
+            <strong>Consulta de Produtos</strong>
+            <p>Consulta de todos os itens</p>
+
+        </div>
+    </header>
+
+    <div id="container-consult">
+        <main>
+                <fieldset>
+                    <legend>Dados do Produto</legend>
+                    <label for="filtrar">Filtrar</label>
+                    <input type="text" id="filtrar">
+                    <button id="consultar">Consultar</button>
+
+
+                    <table>
+                        <thead id='table-consulta'>
+                        <tr class="tr-main">
+                            <th>Nome do Produto</th>
+                            <th>Tipo</th>
+                            <th>Número de Série</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    </table>
+                </fieldset>
+
+            
+            <footer>
+                <p>
+                    <img src="./assets/img/warning.svg" alt="Aviso importante">
+                    Importante! <br> Consultar pelo nome do produto.
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="./assets/js/consulta.js"></script>
+
+
+</body>
+
+</html>
